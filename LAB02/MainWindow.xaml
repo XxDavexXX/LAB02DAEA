@@ -1,0 +1,32 @@
+﻿<Window x:Class="LAB02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <Grid>
+        <!-- Create a Menu for the dropdown options -->
+        <Menu VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">
+            <!-- Menu for Operaciones -->
+            <MenuItem Header="Operaciones" Padding="5px" Background="Blue" Foreground="White">
+                <MenuItem Header="Ingresos" Background="Blue" Foreground="White"/>
+                <MenuItem Header="Salidas" Background="Blue" Foreground="White" Click="OperacionesSalidas_Click"/>
+            </MenuItem>
+            <!-- Menu for Mantenimientos -->
+            <MenuItem Header="Mantenimientos" Padding="5px" Background="Blue" Foreground="White">
+                <MenuItem Header="Conductores" Background="Blue" Foreground="White" Click="Conductores_Click"/>
+                <MenuItem Header="Transportistas" Background="Blue" Foreground="White"/>
+                <MenuItem Header="Camiones" Background="Blue" Foreground="White" Click="Camiones_Click"/>
+                <MenuItem Header="Productos" Background="Blue" Foreground="White"/>
+            </MenuItem>
+            <!-- Menu for Reportes -->
+            <MenuItem Header="Reportes" Padding="5px" Background="Blue" Foreground="White">
+                <MenuItem Header="Cargas" Background="Blue" Foreground="White"/>
+                <MenuItem Header="Ingresos" Background="Blue" Foreground="White"/>
+                <MenuItem Header="Salidas" Background="Blue" Foreground="White" Click="SalidasReportes_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

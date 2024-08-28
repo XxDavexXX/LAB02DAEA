@@ -1,0 +1,27 @@
+﻿<Window x:Class="LAB02.SalidasReportes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB02"
+        mc:Ignorable="d"
+        Title="Salidas Reportes" Height="400" Width="800">
+    <Grid Margin="10">
+        <StackPanel>
+            <!-- DataGrid to display the list of reports -->
+            <DataGrid x:Name="SalidasDataGrid" AutoGenerateColumns="False" Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
+                    <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}" Width="*"/>
+                    <DataGridTextColumn Header="Peso" Binding="{Binding Peso}" Width="*"/>
+                    <DataGridTextColumn Header="Tipo de Auto" Binding="{Binding TipoAuto}" Width="*"/>
+                    <DataGridTextColumn Header="Nombre Transportista" Binding="{Binding NombreTransportista}" Width="*"/>
+                    <DataGridTextColumn Header="Peso de Ingreso" Binding="{Binding PesoIngreso}" Width="*"/>
+                    <DataGridTextColumn Header="Peso de Salida" Binding="{Binding PesoSalida}" Width="*"/>
+                    <DataGridTextColumn Header="Fecha y Hora" Binding="{Binding FechaYHora}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Regresar al Menú" Margin="5" Click="Regresar_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
